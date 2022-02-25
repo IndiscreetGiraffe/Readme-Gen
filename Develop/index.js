@@ -30,6 +30,32 @@ const questions = [
             }
         }
     },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address? (Required)',
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log('Please enter your email address');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'what',
+        message: 'What kind of project is it and what problem(s) will it help solve? (Required)',
+        validate: whatInput => {
+            if (whatInput) {
+                return true;
+            } else {
+                console.log('Please enter what your project is!');
+                return false;
+            }
+        }
+    },
 ];
 
 // TODO: Create a function to write README file
