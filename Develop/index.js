@@ -82,7 +82,32 @@ const questions = [
             }
         }
     },
-    
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Please provide installation instructions (step-by-step) for this project. (Required)',
+        validate: installInput => {
+            if (installInput) {
+                return true;
+            } else {
+                console.log('Please enter your installation instruction steps!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Please provide examples for use. (Required)',
+        validate: usageInput => {
+            if (usageInput) {
+                return true;
+            } else {
+                console.log('Please enter your examples!');
+                return false;
+            }
+        }
+    },
 ];
 
 // TODO: Create a function to write README file
