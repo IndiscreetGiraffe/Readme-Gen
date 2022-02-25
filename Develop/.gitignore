@@ -1,2 +1,7 @@
 node_modules/
+<<<<<<< HEAD
+=======
+package-lock.json
+.vscode
+>>>>>>> 2a13552d560ab187ec1222309bd717ce40f69f9e
 .DS_Store/

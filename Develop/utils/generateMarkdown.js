@@ -3,7 +3,11 @@
 function renderLicenseBadge(license) {
     if(license !== 'no license') {
       return `
+<<<<<<< HEAD
     ![badge](https://img.shields.io/badge/license-${data.license}-blue)
+=======
+    ![badge](https://img.shields.io/badge/license-${license}-blue)
+>>>>>>> 2a13552d560ab187ec1222309bd717ce40f69f9e
       `;
     } else {
       return ' ';
@@ -13,6 +17,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+<<<<<<< HEAD
   if (license !== 'no license') {
   return `
   [${license}](https://choosealicense.com/licenses/${data.license})
@@ -20,10 +25,13 @@ function renderLicenseLink(license) {
   } else {
     return ' ';
   }
+=======
+>>>>>>> 2a13552d560ab187ec1222309bd717ce40f69f9e
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
+<<<<<<< HEAD
 function renderLicenseSection(license) {
   if (license !== 'no license') {
     return `
@@ -83,6 +91,14 @@ function generateMarkdown(data) {
   [GitHub](https://github.com/${data.githubUsername})
 
   [Email: ${data.email}](mailto:${data.email})
+=======
+function renderLicenseSection(license) {}
+
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(data) {
+  return `# ${data.title}
+
+>>>>>>> 2a13552d560ab187ec1222309bd717ce40f69f9e
 `;
 }
 
