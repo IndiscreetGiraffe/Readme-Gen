@@ -109,32 +109,6 @@ const questions = [
         }
     },
     {
-        type: 'confirm',
-        name: 'confirmContributers',
-        message: 'Would you like others to contribute/help with the project? ',
-        default: true
-    },
-    {
-        type: 'input',
-        name: 'contribute',
-        message: 'Please provide any instructions for contribution. (Required)',
-        when: ({ confirmContributers }) => {
-            if (confirmContributers) {
-                return true;
-            } else {
-                return false;
-            }
-        },
-        validate: contributerInput => {
-            if (contributerInput) {
-                return true;
-            } else {
-                console.log('Please enter your instructions for others!');
-                return false;
-            }
-        }
-    },
-    {
         type: 'input',
         name: 'test',
         message: 'Please provide instructions on how one is to test the application. (Required)',
@@ -146,7 +120,13 @@ const questions = [
                 return false;
             }
         }
-    }
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What license will you use for this project?',
+        choices: ['agpl', 'apache', 'mit', 'no license']
+    },
 ];
 
 // TODO: Create a function to write README file
