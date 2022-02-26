@@ -1,36 +1,23 @@
 // TODO: Include packages needed for this application
-<<<<<<< HEAD
+
+
 const fs = require('fs');
 const inquirer = require('inquirer');
 
 const { generateMarkdown } = require('./utils/generateMarkdown.js')
-=======
-<<<<<<< HEAD
 const fs = require('fs');
 const inquirer = require('inquirer');
 
 const generateMarkdown = require('../../utils/generateMarkdown.js/generateMarkdown');
 
-=======
-const inquirer = require('inquirer');
-const generateMarkdown = require('../Develop/utils/generateMarkdown.js');
-const fs = require('fs');
->>>>>>> 2a13552d560ab187ec1222309bd717ce40f69f9e
->>>>>>> c9d3f0681a8052456ba854c6e9d47b12eba08982
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: 'input',
         name: 'title',
-<<<<<<< HEAD
         message: 'What is your project name? (Required)',
         validate: titleInput => {
             if (nameInput) {
-=======
-        message: 'What is the name of your project? (Required)',
-        validate: titleInput => {
-            if (titleInput) {
->>>>>>> c9d3f0681a8052456ba854c6e9d47b12eba08982
                 return true;
             } else {
                 console.log('Uh oh! Please enter your title!');
@@ -151,10 +138,6 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> c9d3f0681a8052456ba854c6e9d47b12eba08982
 function writeToFile = fileContent => {
     return new Promise((resolve, reject) => {
         fs.writeToFile()
@@ -184,10 +167,6 @@ init()
 .catch(err => {
     console.log(error);
 })
-<<<<<<< HEAD
-=======
-=======
->>>>>>> c9d3f0681a8052456ba854c6e9d47b12eba08982
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
@@ -195,7 +174,3 @@ function init() {}
 
 // Function call to initialize app
 init();
-<<<<<<< HEAD
-=======
->>>>>>> 2a13552d560ab187ec1222309bd717ce40f69f9e
->>>>>>> c9d3f0681a8052456ba854c6e9d47b12eba08982
