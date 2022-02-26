@@ -51,7 +51,7 @@ const generateMarkdown = (data) => {
 
   ${renderLicenseBadge(data.license)}
 
-  ## Table-of-Contents
+  ## Table Of Contents
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
@@ -59,32 +59,27 @@ const generateMarkdown = (data) => {
   * [Tests](#tests)
   * [Questions](#questions)
   
-  ## [Description](#table-of-contents)
+  ## [Description]
+  ${data.description}
 
-  ${data.what}
 
-  ${data.why}
-
-  ${data.how}
-
-  ## [Installation Instructions](#table-of-contents)
-
+  ## [Installation Instructions]
   ${data.installation}
 
-  ## [Usage](#table-of-contents)
+  ## [Usage]
 
   ${data.usage}
 
   
-  ## [Tests](#table-of-contents)
+  ## [Tests]
 
   ${data.test}
   
   ##Languages Used
-  ${data.projectLanguages}
+  ${data.languages}
 
   ##License
-  This application is covered under the ${data.license} license
+  This application is covered under the ${data.license}
 
   ## [Questions](#table-of-contents)
   -------------------------------------------------------------------------------------------

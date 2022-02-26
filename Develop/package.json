@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "inquirer": "^8.2.0",
+    "node.js": "^0.0.1-security"
   },
   "name": "readme-gen",
   "description": "[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)",
