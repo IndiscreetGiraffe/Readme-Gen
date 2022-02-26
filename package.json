@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "node.js": "^0.0.1-security"
+  }
+}
